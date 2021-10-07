@@ -1,0 +1,43 @@
+{
+  "pages":[
+    "pages/search/search",
+    
+    "pages/detail/detail",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#666",
+    "navigationBarTitleText": "立轩天气预报",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "Images/search.png",
+        "selectedIconPath": "Images/search-active.png"
+
+
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "Images/home.png.png",
+        "selectedIconPath": "Images/home-active.png.png"
+
+
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text":"日志",
+        "iconPath": "Images/log.png.png",
+        "selectedIconPath": "Images/log-active.png.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

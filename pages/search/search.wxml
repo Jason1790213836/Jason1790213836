@@ -1,0 +1,40 @@
+<view class="wrapper">
+    <view class="header">
+            <text>查询{{city}}天气呀</text>
+    </view>
+    <!-- 输入框 -->
+    <view class="search">
+            <!-- 事件绑定   bindinput="inp_event"  -->
+            <input placeholder="请输入城市" bindinput="inp_event"></input>
+            <image src="../../Images/search.png" bindtap="tap_event"></image>
+    </view>
+    <!-- 天气列表 -->
+    <view class="main">
+        <view class="list">
+
+
+     <block wx:for="{{result}}"  wx:key="index">   
+            <view class="opt">
+                <navigator url="../detail/detail?id=">
+
+                      
+                        <view>{{item.date}}</view>
+                        <view>{{item.update_time}}</view>
+                        <view> {{item.air_level}} </view>
+                        <view> {{item.air_tips}} </view>
+                        <view> {{item.tem}} ~ {{item.tem1}} ~ {{item.tem2}} </view>
+                        <view> {{item.wea}} </view>
+                        <view>
+                            {{item.wea_img}}
+                      
+                        </view>
+                        <view>{{item.week}}</view>
+                        <view>{{item.win}}</view>
+                </navigator>
+                
+            </view>
+    </block>
+        </view>
+       
+    </view>
+</view>

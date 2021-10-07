@@ -1,0 +1,65 @@
+/* pages/search/search.wxss */
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: green;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    line-height: 50px; 
+  }
+  .search {
+      width: 100%;
+      height: 50px;
+      background-color: #ccc;
+      padding: 0 50px;/*内边距*/
+      box-sizing: border-box;
+      position: relative;
+      border: 1px solid transparent;
+
+  }
+  .search input {
+      width: 100%;
+      height: 30px;
+      background-color: honeydew;
+      border-radius: 16px;
+      padding: 0 20px;
+      box-sizing: border-box;
+      margin: 10px 0;
+  }
+  .search image {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      right: 65px;
+      top: 15px;
+      z-index: 10000;
+  }
+  .main {
+      width: 100%;
+      padding: 20px 10px;
+      box-sizing: border-box;
+  }
+  .main .list {
+
+  }
+  .main .list .opt {
+
+  }
+  .main .list .opt  navigator {
+        display:block;
+        width: 100%;
+        background-color: skyblue;
+        border-radius: 10px;
+        margin: 0 0 10px 0;/*上右下左*/
+        color: whitesmoke
+  }
+  .main .list .opt  navigator view {
+      padding: 5px 0;
+      text-align: center;
+      border-bottom: 1px dashed white
+
+  }
+  .main .list .opt  navigator view:first-child{
+      border-top: 1px dashed white
+  }
